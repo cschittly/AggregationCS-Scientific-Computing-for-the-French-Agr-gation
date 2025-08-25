@@ -1,52 +1,49 @@
-# AggregationCS – Scientific Computing for the French Agrégation
+# AggregationCS – Scientific Computing Notebooks
 
-This repository gathers a set of **Python scripts** and **Jupyter notebooks** designed as preparation material for the *concours de l’Agrégation de Mathématiques* (oral exam in *calcul scientifique*).
+This repository was originally created as preparation material for the *concours de l’Agrégation de Mathématiques* (oral exam in *calcul scientifique*).
 
-The collection covers a wide range of **applied mathematics topics** and **numerical methods**, each file focusing on a specific classical application. It can be used both for training and for demonstration during oral examinations.
+It gathers a variety of **numerical methods and applications**, each presented in a clean, didactic way through Python scripts and Jupyter notebooks.  
+Although designed with the Agrégation in mind, these notebooks can be useful to **anyone interested in scientific computing**: students, teachers, or anyone who wants to explore classical numerical methods with practical examples.
 
 ---
 
-## Contents
+## Topics covered
 
-- **EDP_Cancer.py**  
-  Finite difference models for PDEs arising in biological applications (cancer growth).
+- **Numerical ODEs**: Euler schemes, Runge–Kutta, symplectic integration.  
+- **PDEs**: finite-difference discretizations (Poisson, advection, diffusion).  
+- **Optimization**: gradient descent, quadratic minimization.  
+- **Applied models**: Lotka–Volterra predator–prey, pendulum dynamics, biological growth models.  
+- **Control & phase portraits**: isoclines, stability, dynamical behavior.
 
-- **FixedPoint_Newton_TP.ipynb**  
-  Fixed-point iterations and Newton’s method for nonlinear equations.
+---
 
-- **Gradient_Descent_Demos.ipynb**  
-  Visualizations and experiments with gradient descent, constant and optimal steps.
+## Repository content 
 
-- **linear_advection_schemes.ipynb**  
-  Numerical schemes for the linear advection equation: stability, CFL condition, convergence.
-
-- **Numerical_Integration_TP.ipynb**  
-  Classical integration methods: Euler, Runge–Kutta, stability analysis.
-
-- **ODE_Euler_Symplectic_Pendulum.py**  
-  Symplectic Euler scheme applied to Hamiltonian systems (pendulum dynamics).
-
-- **ode_exponential_lotka_volterra.ipynb**  
-  Two illustrative ODE systems: exponential growth and the Lotka–Volterra predator–prey model.
-
-- **optim_quadratic.ipynb**  
-  Optimization of quadratic functions, gradient methods, convergence issues.
-
-- **phase_portrait_control_system.ipynb / .py**  
-  Phase portraits and isoclines for controlled dynamical systems.
-
-- **Poisson1D_FD_TP.ipynb**  
-  Finite-difference discretization of the 1D Poisson equation.
+- `EDP_Cancer.py` — PDE model in biology (cancer growth).  
+- `FixedPoint_Newton_TP.ipynb` — Fixed-point iteration & Newton’s method.  
+- `Gradient_Descent_Demos.ipynb` — Gradient descent demonstrations.  
+- `linear_advection_schemes.ipynb` — Linear advection schemes, CFL stability.  
+- `ODE_Euler_Symplectic_Pendulum.py` — Symplectic Euler scheme for the pendulum.  
+- `ode_exponential_lotka_volterra.ipynb` — Exponential ODE & Lotka–Volterra.  
+- `optim_quadratic.ipynb` — Gradient methods on quadratic functions.  
+- `phase_portrait_control_system.ipynb` — Control system phase portraits.  
+- `Poisson1D_FD_TP.ipynb` — 1D Poisson finite-difference solver.
 
 ---
 
 ## Purpose
 
-These notebooks are **not just coding exercises**:  
-they are **didactic demos** intended for oral presentation at the Agrégation.  
-They highlight:
-- key numerical methods,  
-- interpretation of results (stability, convergence, conservation),  
-- links to **applied domains** (physics, biology, control, optimization).
+- Provide **didactic, ready-to-use demos** for oral presentation.  
+- Showcase a **broad range of numerical methods** and their applications.  
+- Offer a resource that can be extended and reused beyond the Agrégation context.
 
 ---
+
+## Usage
+
+Clone the repository and open the notebooks with Jupyter:
+
+```bash
+git clone https://github.com/your-username/AggregationCS.git
+cd AggregationCS
+jupyter notebook
